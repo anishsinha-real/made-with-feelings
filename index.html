@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Made With Feelings — personalised websites for birthdays, confessions, anniversaries, proposals and more.">
+<title>Made With Feelings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- FLOATING PARTICLES -->
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="brand">Made With <em>Feelings</em></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#work" class="nav-link">Work</a></li>
+    <li><a href="#how" class="nav-link">How it works</a></li>
+    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+    <li><a href="#order" class="nav-link nav-cta">Order yours</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Personalised websites for the moments that matter</p>
+    <h1 class="hero-title reveal delay-1">
+      Some things deserve<br>more than a
+      <span class="title-swap" id="titleSwap">text message.</span>
+    </h1>
+    <p class="hero-sub reveal delay-2">Handcrafted websites for birthdays, confessions, anniversaries, and every moment in between. No templates. Just something real, made for one person.</p>
+    <div class="hero-actions reveal delay-3">
+      <a href="#work" class="btn-primary">See the work</a>
+      <a href="#order" class="btn-ghost">Order yours ↓</a>
+    </div>
+    <p class="hero-hand reveal delay-4">made with too many feelings ♡</p>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">The work</span>
+      <h2 class="section-title">Five occasions.<br><em>Infinite feeling.</em></h2>
+      <p class="section-sub">Every site is built from scratch — your names, your story, your words.</p>
+    </div>
+    <div class="demos-grid">
+
+      <a href="https://anishsinha-real.github.io/-Love-Confession/" target="_blank" class="demo-card reveal" data-color="rose">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <span class="card-icon">♡</span>
+          <span class="card-tag">Love Confession</span>
+        </div>
+        <h3 class="card-title">I think I've<br><em>fallen for you.</em></h3>
+        <p class="card-desc">For when a text isn't enough. A gentle, honest confession that says what's hard to say out loud.</p>
+        <div class="card-footer">
+          <span class="card-link">View demo →</span>
+          <span class="card-badge">Most ordered</span>
+        </div>
+      </a>
+
+      <a href="https://anishsinha-real.github.io/-Cinematic-Birthday/" target="_blank" class="demo-card reveal delay-1" data-color="purple">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <span class="card-icon">✦</span>
+          <span class="card-tag">Cinematic Birthday</span>
+        </div>
+        <h3 class="card-title">A little story<br><em>about you.</em></h3>
+        <p class="card-desc">A minimal, film-like birthday site — elegant typography, quiet atmosphere, and a letter at the end.</p>
+        <div class="card-footer">
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <a href="https://anishsinha-real.github.io/-Best-Friend-Friendship/" target="_blank" class="demo-card reveal delay-2" data-color="amber">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <span class="card-icon">🤝</span>
+          <span class="card-tag">Friendship</span>
+        </div>
+        <h3 class="card-title">To my favourite<br><em>idiot.</em></h3>
+        <p class="card-desc">An unnecessarily emotional website for a best friend — complete with a friendship contract to renew.</p>
+        <div class="card-footer">
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <a href="https://anishsinha-real.github.io/-Anniversary/" target="_blank" class="demo-card reveal delay-1" data-color="teal">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <span class="card-icon">∞</span>
+          <span class="card-tag">Anniversary</span>
+        </div>
+        <h3 class="card-title">Then. Now.<br><em>Always.</em></h3>
+        <p class="card-desc">A timeline of your story together — how it started, the turning points, and where you are today.</p>
+        <div class="card-footer">
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <a href="https://anishsinha-real.github.io/-Proposal/" target="_blank" class="demo-card reveal delay-2" data-color="gold">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <span class="card-icon">💍</span>
+          <span class="card-tag">Proposal</span>
+        </div>
+        <h3 class="card-title">Will you<br><em>marry me?</em></h3>
+        <p class="card-desc">For the biggest question of all. A cinematic build-up with a letter, a ring, and the moment itself.</p>
+        <div class="card-footer">
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">How it works</span>
+      <h2 class="section-title">Simple to order.<br><em>Hard to forget.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num-wrap">
+          <span class="step-num">01</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <h3>Tell me everything</h3>
+          <p>Fill the order form — how you met, memories, inside jokes, what you want to say. The more you share, the more personal it gets.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-num-wrap">
+          <span class="step-num">02</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <h3>I build it from scratch</h3>
+          <p>No templates. Every site is coded specifically for the person you're making it for — their name, your story, your words.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-num-wrap">
+          <span class="step-num">03</span>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <h3>You get a live link</h3>
+          <p>Ready to share in seconds. Drop it in a message — no explanation needed. The site does all the talking.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-num-wrap">
+          <span class="step-num">04</span>
+        </div>
+        <div class="step-body">
+          <h3>Watch them react</h3>
+          <p>That's the best part. You're giving them something no one has ever made for them before.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">Pricing</span>
+      <h2 class="section-title">Pick your<br><em>moment.</em></h2>
+      <p class="section-sub">Every tier includes a personalised, mobile-friendly site hosted live and ready to share.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal" data-tier="Starter" data-price="₹499">
+        <div class="pricing-top">
+          <p class="tier-name">Starter</p>
+          <p class="tier-price"><sup>₹</sup>499</p>
+          <p class="tier-desc">A clean, personal site for one occasion — simple but something they'll remember.</p>
+        </div>
+        <ul class="tier-features">
+          <li>Single-page design</li>
+          <li>Personalised with their name & your story</li>
+          <li>Envelope letter interaction</li>
+          <li>Live hosted link</li>
+          <li>Delivered in 3 days</li>
+        </ul>
+        <button class="pricing-btn" onclick="openOrder('Starter','₹499')">Order Starter →</button>
+      </div>
+
+      <div class="pricing-card featured reveal delay-1" data-tier="Story" data-price="₹999">
+        <div class="featured-pill">Most popular</div>
+        <div class="pricing-top">
+          <p class="tier-name">Story</p>
+          <p class="tier-price"><sup>₹</sup>999</p>
+          <p class="tier-desc">A full multi-scene experience built around your story from start to finish.</p>
+        </div>
+        <ul class="tier-features">
+          <li>Everything in Starter</li>
+          <li>Multi-scene story arc (5–6 slides)</li>
+          <li>Background music</li>
+          <li>Custom interactions (cake, ring & more)</li>
+          <li>Photo memories section</li>
+          <li>Delivered in 5 days</li>
+        </ul>
+        <button class="pricing-btn" onclick="openOrder('Story','₹999')">Order Story →</button>
+      </div>
+
+      <div class="pricing-card reveal delay-2" data-tier="Premium" data-price="₹1,499">
+        <div class="pricing-top">
+          <p class="tier-name">Premium</p>
+          <p class="tier-price"><sup>₹</sup>1,499</p>
+          <p class="tier-desc">Fully custom — unique design, unique concept, built around your specific vision.</p>
+        </div>
+        <ul class="tier-features">
+          <li>Everything in Story</li>
+          <li>Fully custom visual design & theme</li>
+          <li>Unique interactions built to your idea</li>
+          <li>Revisions included</li>
+          <li>Priority delivery in 4 days</li>
+        </ul>
+        <button class="pricing-btn" onclick="openOrder('Premium','₹1,499')">Order Premium →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <p class="modal-eyebrow">Almost there</p>
+    <h2 class="modal-title" id="modalTitle">Let's make something real</h2>
+    <p class="modal-sub">Fill in a few details and you'll be redirected to WhatsApp with your order pre-filled.</p>
+
+    <div class="modal-tier-display" id="modalTierDisplay"></div>
+
+    <div class="modal-form">
+      <div class="field">
+        <label for="m-name">Your name</label>
+        <input type="text" id="m-name" placeholder="e.g. Anish" autocomplete="name">
+        <span class="field-err" id="err-name"></span>
+      </div>
+      <div class="field">
+        <label for="m-person">Their name (who's it for?)</label>
+        <input type="text" id="m-person" placeholder="e.g. Clara">
+        <span class="field-err" id="err-person"></span>
+      </div>
+      <div class="field">
+        <label for="m-occasion">Occasion</label>
+        <select id="m-occasion">
+          <option value="" disabled selected>Choose one</option>
+          <option>Birthday</option>
+          <option>Love confession</option>
+          <option>Anniversary</option>
+          <option>Friendship appreciation</option>
+          <option>Proposal</option>
+          <option>Something else</option>
+        </select>
+        <span class="field-err" id="err-occasion"></span>
+      </div>
+      <div class="field">
+        <label for="m-details">Tell me about them & your story <span class="optional">(optional but the more the better)</span></label>
+        <textarea id="m-details" rows="4" placeholder="How you met, inside jokes, memories, what you want to say…"></textarea>
+      </div>
+      <button class="whatsapp-btn" id="waBtn" onclick="sendToWhatsapp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.556 4.121 1.528 5.855L.057 23.882a.5.5 0 00.611.611l6.086-1.461A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.498-5.2-1.371l-.374-.217-3.871.929.944-3.8-.237-.389A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Continue on WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER SECTION anchor -->
+<div id="order" style="position:relative;top:-80px;visibility:hidden;" aria-hidden="true"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-brand">Made With <em>Feelings</em></p>
+    <p class="footer-hand">made with too many feelings & a little bit of magic ♡</p>
+    <p class="footer-copy">© 2025 · all sites built from scratch · no templates</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
